@@ -1,12 +1,19 @@
-p {
-  color: blue;
-  background-color: black;
-  font-size: 14pt;
-}
-
 h1 {
   font-size: 45pt;
   color: red;
   background-color: black;
+  align-content: center;
+}
+
+ul {
+  list-style: circle;
+}
+
+h2 {
+  align-content: center;
+}
+
+ol {
+  list-style: decimal;
   align-content: center;
 }

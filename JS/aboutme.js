@@ -50,19 +50,25 @@ switch (age.toLowerCase()) {
 }
 
 let vehicle = '';
-while (vehicle !== 'SUV') {
+let i = 0;
+while (i <= 4) {
+  i++;
+  console.log(i);
+}
+while (vehicle !== 'suv') {
   vehicle = prompt(
     'What kind of car do I drive?  Your options are: Sedan, SUV, Truck, Limo or Motorcycle?'
   );
-  if (vehicle === 'SUV') {
+  vehicle = vehicle.toLowerCase();
+  if (vehicle === 'suv') {
     alert('That is the correct answer.  It is an Expedition to be exact');
-  } else if (vehicle === 'Truck') {
+  } else if (vehicle === 'truck') {
     alert('I like trucks, but I have 3 kids. So no truck, try again');
-  } else if (vehicle === 'Limo') {
+  } else if (vehicle === 'limo') {
     alert('No limos here.  I barely like driving my kids around.  Try again');
-  } else if (vehicle === 'Sedan') {
+  } else if (vehicle === 'sedan') {
     alert('Not a Sedan. I need a bit more room');
-  } else if (vehicle === 'Motorcycle') {
+  } else if (vehicle === 'motorcycle') {
     alert('Two wheels just is not enough.  Try again');
   }
 }
