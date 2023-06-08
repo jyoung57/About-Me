@@ -1,5 +1,5 @@
 let yourName = prompt('What is your name?');
-console.log(yourName);
+// console.log(yourName);
 alert(`${yourName} welcome to my page`);
 
 let college = confirm('Did you go to college?');
@@ -47,4 +47,22 @@ switch (age.toLowerCase()) {
   default:
     alert(`Your guess, ${age}, was incorrect.  The correct answer is 41`);
   // console.log(`Your guess, ${age}, was incorrect.  The correct answer is 4`);
+}
+
+let vehicle = '';
+while (vehicle !== 'SUV') {
+  vehicle = prompt(
+    'What kind of car do I drive?  Your options are: Sedan, SUV, Truck, Limo or Motorcycle?'
+  );
+  if (vehicle === 'SUV') {
+    alert('That is the correct answer.  It is an Expedition to be exact');
+  } else if (vehicle === 'Truck') {
+    alert('I like trucks, but I have 3 kids. So no truck, try again');
+  } else if (vehicle === 'Limo') {
+    alert('No limos here.  I barely like driving my kids around.  Try again');
+  } else if (vehicle === 'Sedan') {
+    alert('Not a Sedan. I need a bit more room');
+  } else if (vehicle === 'Motorcycle') {
+    alert('Two wheels just is not enough.  Try again');
+  }
 }
