@@ -137,3 +137,5 @@ while (vehicle !== 'suv') {
     break;
   }
 }
+
+alert(`You have earned ${userPoints} point(s).  Well done.`);
