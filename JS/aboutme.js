@@ -10,27 +10,29 @@ alert(
   `Are you ready for a guessing game ${yourName}? Your answers must match mine.`
 );
 
-let kids = prompt('Do you have kids, yes or no?');
-
-if (kids === 'yes') {
-  userPoints++;
-  alert('I have three myself, you get 1 point.');
-  console.log('I have three myself, you get 1 point.');
-} else {
-  alert('Sorry, you do not earn any points for this question.');
-  console.log('Sorry, you do not earn any points for this question.');
+function kidsOrNokids() {
+  let kids = prompt ('Do you have kids, yes or no?');
+  if (kids === 'yes' || kids === 'y') {
+    userPoints++;
+    alert('That is the correct answer');
+  }else { 
+    alert('sorry, that is incorrect');
+  }
 }
+kidsOrNokids();
+// CJ completed line 13 thru 23; as the driver;
 
-let married = prompt('Are you married, yes or not?');
-
-if (married === 'yes') {
-  userPoints++;
-  alert('I have been married for 14 years. You get a point.');
-  console.log('I have been married for 14 years.  You get a point.');
-} else {
-  alert('Sorry, you have to be married to get the point.');
-  console.log('Sorry, you have to be married to get the point.');
+function couples () {
+  let married = prompt('Are you married, yes or not?'); 
+  if (married === 'yes' || married === 'y') {
+    userPoints++;
+    alert('I have been married for 14 years. You get a point.');
+  } else {
+    alert('Sorry, you have to be married to get the point.');
+  }
 }
+couples ();
+// CJ completed line 25 thru 31; as the driver;
 
 let college = prompt('Did you go to college, yes or no?').toLowerCase();
 
